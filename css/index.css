@@ -59,6 +59,12 @@
         overflow: hidden;
     }
     
+    .nav-wrapper {
+        display: flex;
+        height: 112px;
+        width: 100%;
+    }
+    
     .header-logo {
         display: flex;
         align-items: center;
@@ -69,7 +75,6 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        height: 112px;
     }
     
     .nav-list {
