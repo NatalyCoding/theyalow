@@ -27,7 +27,7 @@
         font-size: 22px;
     }
     
-    * {
+    *, *::before, *::after {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -41,7 +41,7 @@
     .wrapper {
         max-width: 1020px;
         margin: 0 auto;
-        display: flex;
+        
     }
     
     header {
@@ -61,6 +61,8 @@
     
     .nav-wrapper {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 112px;
         width: 100%;
     }
@@ -68,7 +70,6 @@
     .header-logo {
         display: flex;
         align-items: center;
-        margin-bottom: 1px;
     }
     
     .header-nav {
@@ -101,9 +102,18 @@
         padding: 20px;
     }
     
-    .slider {
+    /*.slider {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    } */
+
+    .video-wrapper {
+        max-width: 1020px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 70px;
     }
     
     h2,
@@ -133,6 +143,7 @@
     
     .icons-section {
         display: flex;
+        height: 210px;
     }
     
     .icons-section .feature {
@@ -142,6 +153,7 @@
         width: 100%;
         margin: 0;
         justify-content: space-around;
+        align-items: center;
         padding: 30px;
     }
     
@@ -153,6 +165,21 @@
     .icons-section .feature:last-child {
         border-left: 1px solid #d2d2d2;
         border-right: 1px solid #d2d2d2;
+    }
+
+    .icon-cloud {
+        width: 109px;
+        height: 74px;
+    }
+
+    .icon-leaf {
+        width: 91px;
+        height: 95px;
+    }
+
+    .icon-telegram {
+        width: 81px;
+        height: 83px;
     }
     
     .icons-section .feature h5 {
@@ -169,18 +196,23 @@
         background: url("../assets/img/yellowbg.jpg");
         width: 100%;
         box-shadow: 0 -1px 5px black;
+        padding: 40px 0;
     }
     
     .news-section,
     .social-content {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .content-item {
+        width: 320px;
+        height: 225px;
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
     }
     
     .scroll-section-wrapper h4 {
@@ -188,10 +220,15 @@
         font-size: 37px;
         color: #fff;
         text-align: left;
+        margin-bottom: 40px;
     }
-    
-    .month {
-        color: b26529;
+
+    .slider-controls {
+        width: 890px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin: 0 auto;
     }
     
     .design-features {
